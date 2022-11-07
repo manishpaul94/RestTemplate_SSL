@@ -1,5 +1,6 @@
 package com.deloitte.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -11,11 +12,13 @@ import com.deloitte.pojo.TUPojo;
 
 @Service
 public class TUService {
+	
+	@Autowired
 	private RestTemplate restTemplate;
 
-    public TUService(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
-    }
+//    public TUService(RestTemplate restTemplate) {
+//        this.restTemplate = restTemplate;
+//    }
 
 	public TUPojo invokeTUCall() {
 		
