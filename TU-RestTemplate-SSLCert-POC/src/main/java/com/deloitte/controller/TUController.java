@@ -14,7 +14,7 @@ public class TUController {
 	@Autowired
 	private TUService tuservice;
 	
-	@GetMapping("/getAddition")
+	@GetMapping("/getTU")
 	public TUPojo invokeTUCall() {
 		return tuservice.invokeTUCall();
 	}
